@@ -161,4 +161,10 @@ include("algorithms/unionalg.jl")
 # include("precompile.jl")
 # _precompile_()
 
+
+#save and load uitility. These are to be defined in a module
+function save_MPS(filename::String, state::InfiniteMPS) end
+function load_MPS(filename::String, state::InfiniteMPS) end
+export save_MPS, load_MPS
+
 end

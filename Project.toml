@@ -21,6 +21,12 @@ TensorOperations = "6aa20fa7-93e2-5fca-9bc0-fbd0db3c71a2"
 Transducers = "28d57a85-8fef-5791-bfe6-a80928e7c999"
 VectorInterface = "409d34a3-91d5-4945-b6ec-7529ddf182d8"
 
+[weakdeps]
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+
+[extensions]
+save_load_utils = "JLD2"
+
 [compat]
 Accessors = "0.1"
 FLoops = "0.1, 0.2"
@@ -39,6 +45,7 @@ TensorOperations = "4"
 Transducers = "0.4"
 VectorInterface = "0.2, 0.3, 0.4"
 julia = "1.8"
+JLD2 = "0.5"
 
 [extras]
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
